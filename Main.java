@@ -14,11 +14,11 @@ public class Main {
         Double[] dArray = {1.0, 2.0, 3.0, 4.0, 5.0};
         String[] sArray = {" one ", " two ", " three ", " four ", " five "};
 
-        System.out.println("Даны следующие массивы:");
+        System.out.println("Р”Р°РЅС‹ СЃР»РµРґСѓСЋС‰РёРµ РјР°СЃСЃРёРІС‹:");
 
-        System.out.println("Integer-массив: " + Arrays.toString(iArray));
-        System.out.println("Double-массив: " + Arrays.toString(dArray));
-        System.out.println("String-массив: " + Arrays.toString(sArray));
+        System.out.println("Integer-РјР°СЃСЃРёРІ: " + Arrays.toString(iArray));
+        System.out.println("Double-РјР°СЃСЃРёРІ: " + Arrays.toString(dArray));
+        System.out.println("String-РјР°СЃСЃРёРІ: " + Arrays.toString(sArray));
 
         try {
             swapArray(iArray, 0, 1);
@@ -28,9 +28,9 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println("Результат выполнения замены в Integer-массиве: " + Arrays.toString(iArray));
-        System.out.println("Результат выполнения замены в Double-массиве: " + Arrays.toString(dArray));
-        System.out.println("Результат выполнения замены в String-массиве: " + Arrays.toString(sArray));
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹РїРѕР»РЅРµРЅРёСЏ Р·Р°РјРµРЅС‹ РІ Integer-РјР°СЃСЃРёРІРµ: " + Arrays.toString(iArray));
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹РїРѕР»РЅРµРЅРёСЏ Р·Р°РјРµРЅС‹ РІ Double-РјР°СЃСЃРёРІРµ: " + Arrays.toString(dArray));
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹РїРѕР»РЅРµРЅРёСЏ Р·Р°РјРµРЅС‹ РІ String-РјР°СЃСЃРёРІРµ: " + Arrays.toString(sArray));
 
     }
 
@@ -41,7 +41,7 @@ public class Main {
                 secondNumPos < 0 ||
                 secondNumPos > array.length ||
                 firstNumPos == secondNumPos) {
-            throw new PositionException("Неверно указаны позиции меняющихся элементов");
+            throw new PositionException("РќРµРІРµСЂРЅРѕ СѓРєР°Р·Р°РЅС‹ РїРѕР·РёС†РёРё РјРµРЅСЏСЋС‰РёС…СЃСЏ СЌР»РµРјРµРЅС‚РѕРІ");
         }
         Object temp = array[firstNumPos];
         array[firstNumPos] = array[secondNumPos];
@@ -68,9 +68,9 @@ public class Main {
         Box <Apple> boxWithApples = new Box<>(new Apple(), new Apple(), new Apple());
         Box <Apple> anotherBoxWithApples = new Box<>(new Apple(), new Apple(), new Apple(), new Apple(), new Apple());
 
-        System.out.println("Вес коробки с апельсинами: " + boxWithOranges.getWeight());
-        System.out.println("Вес коробки с яблоками: " + boxWithApples.getWeight());
-        System.out.println("Вес ещё одной коробки с яблоками: " + anotherBoxWithApples.getWeight());
+        System.out.println("Р’РµСЃ РєРѕСЂРѕР±РєРё СЃ Р°РїРµР»СЊСЃРёРЅР°РјРё: " + boxWithOranges.getWeight());
+        System.out.println("Р’РµСЃ РєРѕСЂРѕР±РєРё СЃ СЏР±Р»РѕРєР°РјРё: " + boxWithApples.getWeight());
+        System.out.println("Р’РµСЃ РµС‰С‘ РѕРґРЅРѕР№ РєРѕСЂРѕР±РєРё СЃ СЏР±Р»РѕРєР°РјРё: " + anotherBoxWithApples.getWeight());
 
         System.out.println(boxWithApples.compare(boxWithOranges));
 
