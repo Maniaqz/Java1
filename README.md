@@ -1,2 +1,2 @@
-# Java1
+# Java
 Homework n' stuff
